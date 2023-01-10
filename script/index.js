@@ -4,13 +4,10 @@ const isIntersecting = (entry) => {
 };
 
 const loadImage = (entry) => {
-
-
   const container = entry.target;
   const imagen = container.firstChild;
   const url = imagen.dataset.src;
   imagen.src = url;
-
 
   observer.unobserve(container);
 };
@@ -23,9 +20,6 @@ const registerImage = (imagen) => {
   observer.observe(imagen);
 };
 
-
-
-
 const maxinum = 122;
 const minimum = 1;
 const random = () => Math.floor(Math.random() * (maxinum - minimum)) + minimum;
@@ -33,12 +27,9 @@ const random = () => Math.floor(Math.random() * (maxinum - minimum)) + minimum;
 const createImageNode = () => {
   const container = document.createElement("div");
   container.className = "images";
-  
-
 
   const imagen = document.createElement("img");
   imagen.classList = "img-fox";
-
 
   imagen.dataset.src = `https://randomfox.ca/images/${random()}.jpg`;
 
@@ -64,8 +55,3 @@ const addImage = () => {
 addButton.addEventListener("click", addImage);
 deleteButton.addEventListener("click", deleteAll);
 const mountNode = document.getElementById("images");
-
-
-
-
-
