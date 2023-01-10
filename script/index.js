@@ -1,20 +1,17 @@
-// import { registerImage } from "./lazy";
+//LAZY section
 const isIntersecting = (entry) => {
   return entry.isIntersecting; //true(dentro de la pantalla)
 };
 
 const loadImage = (entry) => {
-  // const nodo = entry.target;
-  // console.log("holis");
+
 
   const container = entry.target;
   const imagen = container.firstChild;
   const url = imagen.dataset.src;
-  //load image
   imagen.src = url;
 
-  //des registra la imagen (unlisten)
-  // observer.unobserve(nodo);
+
   observer.unobserve(container);
 };
 
@@ -23,14 +20,12 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 const registerImage = (imagen) => {
-  //intersectionObservador =>observer(imagen)
   observer.observe(imagen);
 };
-{
-  /* <div class="p-4">
-<img class="mx-auto" width="320" src="https://randomfox.ca/images/2.jpg" alt="">
-</div> */
-}
+
+
+
+
 const maxinum = 122;
 const minimum = 1;
 const random = () => Math.floor(Math.random() * (maxinum - minimum)) + minimum;
