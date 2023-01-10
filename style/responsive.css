@@ -1,0 +1,51 @@
+@media (max-width:800px) {
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+
+  .hero-section {
+    height: 100%;
+  }
+
+  .delete-btn {
+    width: 160px;
+  }
+
+  .add-btn {
+    margin-right: 0px;
+
+  }
+
+  .images-section {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+
+  }
+
+  .hero-1st h1 {
+    font-size: 30px;
+  }
+
+  .hero-2nd img {
+    width: 100vw;
+    max-width: 650px;
+  }
+
+  .buttons-box {
+    /* border: solid; */
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+
+}
+
+@media (min-width:800px) {
+  footer {
+    /* position: fixed;
+    position: absolute;
+    bottom: 0; */
+  }
+}

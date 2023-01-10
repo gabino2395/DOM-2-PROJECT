@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Moon+Dance&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style/index.css">
+  <link rel="stylesheet" href="./style/responsive.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <h3 class="title">FOX APP</h3>
+  </header>
+  <main>
+    <section class="hero-section">
+      <div class="hero-1st">
+
+        <h1>
+          Lazy loading with Intersection Obvserver
+        </h1>
+        <p>
+          App to implement the use of the Intersection Observer API. This way you use a lazy loading strategy where the
+          user can add images but They will only be downloaded if they are in the viewport of the screen. <br> <br> This
+          popular method helps improve the loading time of websites, especially those that contain large amounts of
+          data, such as images or videos,and this way
+          the app will have a better performance.
+        </p>
+
+        <div class="buttons-box">
+          <button id="agregar" class="p-3 add-btn">Random Fox</button>
+          <button id="limpiar" class="p-3 delete-btn">Delete All</button>
+        </div>
+      </div>
+
+      <div class="hero-2nd">
+        <img src="./img/fox2.webp" alt="fox">
+      </div>
+    </section>
+    <section class="images-section">
+      <div>
+        <h2 class="foxes">
+          the
+          foxes </h2>
+
+
+      </div>
+      <div class="images-box">
+
+
+
+        <div id="images" class="images">
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Gabino Mendez Acosta 2022
+  </footer>
+  <script src="./script/index.js"></script>
+  <script src="./lazy.js"></script>
+
+</body>
+
+</html>

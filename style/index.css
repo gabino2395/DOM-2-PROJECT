@@ -1,0 +1,204 @@
+@import 'tailwindcss/dist/base.css';
+@import 'tailwindcss/dist/components.css';
+@import 'tailwindcss/dist/utilities.css';
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Moon+Dance&display=swap');
+
+/* Fonts */
+/* font-family: 'EB Garamond', serif;
+font-family: 'Moon Dance', cursive; */
+
+
+/* Variables */
+:root {
+  --background: #fcf5e8;
+  --first-title: #262626;
+  --buttons: #6c6969;
+  --text: #75716b;
+  --moonFamily: 'Moon Dance', cursive;
+  --otherFont: 'EB Garamond', serif;
+  --background2: #d8ccb7;
+
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/* html {
+  background: var(--background2)
+} */
+
+body {
+  background: red;
+  background: var(--yellow);
+  background: var(--background);
+  font-family: var(--otherFont);
+}
+
+/* header */
+header {
+  height: 8vh;
+  background: var(--background2);
+  /* margin-top: 20px; */
+  width: 100vw;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-family: var(--moonFamily);
+  font-size: 25px;
+}
+
+/* hero section */
+
+
+.hero-section {
+  margin-top: 70px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+}
+
+
+
+/* hero 1st */
+.hero-1st {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: space-around;
+  /* margin-left:40px ; */
+  width: 50%;
+}
+
+.hero-1st h1 {
+  color: var(--first-title);
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.hero-1st p {
+  color: var(--text);
+}
+
+.add-btn {
+  border: none;
+  height: 38px;
+  color: #d8d8d8;
+  background: var(--first-title);
+  border-radius: 8px;
+  margin-right: 20px;
+  width: 160px;
+  transition: .6s;
+}
+
+.add-btn:hover {
+  cursor: pointer;
+  color: var(--first-title);
+  background: #d8d8d8;
+  ;
+}
+
+.delete-btn {
+  border: none;
+  height: 38px;
+  transition: .4s;
+
+  border: solid 1px;
+  border-radius: 8px;
+  width: 120px;
+}
+
+.delete-btn:hover {
+  cursor: pointer;
+  border-color: rgb(161, 93, 93);
+  color: #d8d8d8;
+  background: rgb(161, 93, 93);
+
+}
+
+
+/* hero-2nd */
+
+
+
+.hero-2nd img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 410px;
+  height: 380px;
+  border-radius: 9px;
+}
+
+/* images section */
+
+.images-section {
+  /* margin-top: 50px; */
+  padding-bottom: 40px;
+  margin-bottom: 70px;
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.images-box {
+  width: 80vw;
+  /* border: solid 1px ; */
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-around;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.images {
+  display: flex;
+  gap: 1.8em;
+
+  /* justify-content: space-around;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap; */
+}
+
+.foxes {
+  margin-top: 30px;
+  color: var(--first-title);
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.img-fox {
+  border-radius: 8px;
+  width: 250px;
+  min-width: 250px;
+  height: 250px !important;
+}
+
+img {
+  background-color: grey;
+}
+
+/* footer */
+
+footer{
+margin-top: 20px;
+  height: 8vh;
+  background: var(--background2);
+  /* margin-top: 20px; */
+  width: 100vw;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
